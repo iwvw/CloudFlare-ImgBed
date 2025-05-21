@@ -5,8 +5,6 @@ RUN apt-get update && \
     update-ca-certificates && \
     rm -rf /var/lib/apt/lists/*
 
-ENV NODE_EXTRA_CA_CERTS=/etc/ssl/certs/ca-certificates.crt
-
 WORKDIR /app
 COPY . .
 
